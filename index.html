@@ -1,0 +1,648 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightStar High School</title>
+</head>
+
+<body class="bg-white">
+
+
+<header class="sticky top-0 z-50 bg-blue-950 px-6 py-4 text-white shadow-md">
+  <div class="mx-auto flex max-w-7xl items-center justify-between gap-4">
+     
+
+    <a href="#home" class="shrink-0 text-xl font-bold sm:text-2xl">
+      BrightStar <span class="text-yellow-400">High School</span>
+    </a>
+
+    <nav class="hidden items-center gap-6 md:flex">
+      <a href="#home" class="hover:text-yellow-400 hover:underline">Home</a>
+      <a href="#about" class="hover:text-yellow-400 hover:underline">About</a>
+      <a href="#academics" class="hover:text-yellow-400 hover:underline">Academics</a>
+      <a href="#news" class="hover:text-yellow-400 hover:underline">News</a>
+      <a href="#contact" class="hover:text-yellow-400 hover:underline">Contact</a>
+    </nav>
+
+    <a href="#admissions"
+       class="hidden rounded-lg bg-yellow-400 px-4 py-2 font-bold text-blue-950 hover:bg-yellow-300 md:inline-flex">
+      Admissions
+    </a>
+
+    <button
+      id="menu-toggle"
+      type="button"
+      class="rounded-lg border border-blue-700 px-3 py-2 text-2xl leading-none hover:bg-blue-900 md:hidden"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <span id="menu-icon" aria-hidden="true">☰</span>
+    </button>
+
+  </div>
+
+  <nav id="mobile-menu" class="mx-auto mt-4 hidden max-w-7xl border-t border-blue-800 pt-4 md:hidden">
+    <div class="flex flex-col gap-1">
+
+      <a href="#home" class="rounded-lg px-4 py-3 hover:bg-blue-900">Home</a>
+      <a href="#about" class="rounded-lg px-4 py-3 hover:bg-blue-900">About</a>
+      <a href="#academics" class="rounded-lg px-4 py-3 hover:bg-blue-900">Academics</a>
+      <a href="#news" class="rounded-lg px-4 py-3 hover:bg-blue-900">News</a>
+      <a href="#contact" class="rounded-lg px-4 py-3 hover:bg-blue-900">Contact</a>
+
+      <a href="#admissions" class="mt-2 rounded-lg bg-yellow-400 px-4 py-3 text-center font-bold text-blue-950 hover:bg-yellow-300">
+        Admissions
+      </a>
+
+    </div>
+  </nav>
+</header>
+
+
+  <main>
+ <!--home-->
+<section
+  id="home"
+  class="relative flex min-h-[600px] items-center bg-cover bg-center px-6 py-20 text-white md:min-h-[680px]"
+  style="background-image: linear-gradient(to right, rgba(2, 20, 55, 0.95), rgba(2, 20, 55, 0.02)), url('/src/assets/schoolimage.jpg');"
+>
+  <div class="mx-auto w-full max-w-7xl">
+    <p class="font-semibold text-yellow-400">
+      Welcome to BrightStar High School
+    </p>
+
+    <h1 class="mt-5 max-w-3xl text-4xl font-bold md:text-6xl">
+      Shaping Bright Futures Through Quality Education
+    </h1>
+
+    <p class="mt-6 max-w-2xl text-lg leading-8 text-blue-100">
+      A community where learners discover their potential,
+      develop strong values, and prepare for a brighter future.
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a
+        href="#admissions"
+        class="rounded-lg bg-yellow-400 px-6 py-3 font-bold text-blue-950 hover:bg-yellow-300"
+      >
+        Explore Admissions
+      </a>
+
+      <a
+        href="#about"
+        class="rounded-lg border border-white px-6 py-3 font-bold hover:bg-white hover:text-blue-950"
+      >
+        Discover Our School
+      </a>
+    </div>
+
+  </div>
+</section>
+<!--about us-->
+<section id="about" class="bg-white px-6 py-20">
+  <div class="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
+
+    <div>
+      <img
+        id="aboutimage"
+        src="/src/assets/schoolimage.jpg"
+        alt="BrightStar High School campus"
+        class="h-80 w-full rounded-2xl object-cover shadow-lg"
+      />
+    </div>
+
+    <div>
+      <p class="font-semibold uppercase tracking-widest text-yellow-600">
+        About Our School
+      </p>
+
+      <h2 class="mt-3 text-3xl font-bold leading-tight text-blue-950 md:text-4xl">
+        Building Knowledge, Character and Confidence
+      </h2>
+
+      <p class="mt-5 leading-7 text-gray-600">
+        BrightStar High School is committed to providing quality education
+        in a supportive environment where every learner can grow
+        academically, socially and personally.
+      </p>
+
+      <div class="mt-6 grid grid-cols-2 gap-4">
+        <div class="rounded-xl bg-blue-50 p-4">
+          <h3 class="font-bold text-blue-950">Academic Excellence</h3>
+          <p class="mt-2 text-sm text-gray-600">
+            Helping learners achieve their potential.
+          </p>
+        </div>
+
+        <div class="rounded-xl bg-yellow-50 p-4">
+          <h3 class="font-bold text-blue-950">Strong Values</h3>
+          <p class="mt-2 text-sm text-gray-600">
+            Developing discipline and responsibility.
+          </p>
+        </div>
+      </div>
+
+      <a
+        href="#contact"
+        class="mt-7 inline-block rounded-lg bg-blue-950 px-6 py-3 font-semibold text-white hover:bg-blue-800"
+      >
+        Learn More About Us
+      </a>
+    </div>
+
+  </div>
+</section>
+<!--academics-->
+
+<section id="academics" class="bg-gray-50 px-6 py-20">
+  <div class="mx-auto max-w-7xl">
+
+    <div class="mx-auto max-w-2xl text-center">
+      <p class="font-semibold uppercase tracking-widest text-yellow-600">
+        What We Offer
+      </p>
+
+      <h2 class="mt-3 text-3xl font-bold text-blue-950 md:text-4xl">
+        Explore Our Academic Programs
+      </h2>
+
+      <p class="mt-4 leading-7 text-gray-600">
+        Discover learning opportunities that help students develop
+        knowledge, practical skills, and confidence.
+      </p>
+    </div>
+
+    <div class="mt-12 grid gap-8 md:grid-cols-3">
+
+      <article class="overflow-hidden rounded-2xl bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+        <img
+          src="/src/assets/school-campus.jpg"
+          alt="Students learning science"
+          class="h-52 w-full object-cover"
+        />
+
+        <div class="p-6">
+          <p class="text-sm font-semibold text-yellow-600">PROGRAM 01</p>
+          <h3 class="mt-2 text-xl font-bold text-blue-950">
+            Sciences & Mathematics
+          </h3>
+          <p class="mt-3 leading-6 text-gray-600">
+            Encourage curiosity, analytical thinking, and problem-solving
+            through scientific learning.
+          </p>
+          <a href="#contact" class="mt-5 inline-block font-semibold text-blue-800 hover:text-yellow-600">
+            Learn More →
+          </a>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-2xl bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+        <img
+         src="/src/assets/computerlab.jpg"
+          alt="Students learning computer skills"
+          class="h-52 w-full object-cover"
+        />
+
+        <div class="p-6">
+          <p class="text-sm font-semibold text-yellow-600">PROGRAM 02</p>
+          <h3 class="mt-2 text-xl font-bold text-blue-950">
+            Technology & Computing
+          </h3>
+          <p class="mt-3 leading-6 text-gray-600">
+            Introduce learners to digital tools, technology, and
+            creative problem-solving.
+          </p>
+          <a href="#contact" class="mt-5 inline-block font-semibold text-blue-800 hover:text-yellow-600">
+            Learn More →
+          </a>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-2xl bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+        <img
+         src="/src/assets/school-campus.jpg"
+          alt="Students reading in a school library"
+          class="h-52 w-full object-cover"
+        />
+
+        <div class="p-6">
+          <p class="text-sm font-semibold text-yellow-600">PROGRAM 03</p>
+          <h3 class="mt-2 text-xl font-bold text-blue-950">
+            Languages & Humanities
+          </h3>
+          <p class="mt-3 leading-6 text-gray-600">
+            Develop communication, reading, research, and critical
+            thinking skills.
+          </p>
+          <a href="#contact" class="mt-5 inline-block font-semibold text-blue-800 hover:text-yellow-600">
+            Learn More →
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!--statistics-->
+
+<section class="bg-blue-950 px-6 py-16 text-white">
+  <div class="mx-auto max-w-7xl">
+
+    <div class="grid grid-cols-2 gap-8 text-center md:grid-cols-4">
+
+      <div>
+        <p class="text-4xl font-bold text-yellow-400 md:text-5xl">
+          850+
+        </p>
+        <h3 class="mt-3 font-semibold">Students</h3>
+        <p class="mt-1 text-sm text-blue-200">
+          Growing Together
+        </p>
+      </div>
+
+      <div>
+        <p class="text-4xl font-bold text-yellow-400 md:text-5xl">
+          45+
+        </p>
+        <h3 class="mt-3 font-semibold">Teachers</h3>
+        <p class="mt-1 text-sm text-blue-200">
+          Dedicated Educators
+        </p>
+      </div>
+
+      <div>
+        <p class="text-4xl font-bold text-yellow-400 md:text-5xl">
+          12+
+        </p>
+        <h3 class="mt-3 font-semibold">Learning Areas</h3>
+        <p class="mt-1 text-sm text-blue-200">
+          Diverse Opportunities
+        </p>
+      </div>
+
+      <div>
+        <p class="text-4xl font-bold text-yellow-400 md:text-5xl">
+          20+
+        </p>
+        <h3 class="mt-3 font-semibold">Years of Excellence</h3>
+        <p class="mt-1 text-sm text-blue-200">
+          A Tradition of Learning
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--news and announcements-->
+
+<section id="news" class="bg-white px-6 py-20">
+  <div class="mx-auto max-w-7xl">
+
+    <div class="flex flex-col justify-between  gap-4 md:flex-row md:items-end">
+      <div>
+        <p class="font-semibold uppercase tracking-widest text-yellow-600">
+          Stay Informed
+        </p>
+
+        <h2 class="mt-3 text-3xl font-bold text-blue-950 md:text-4xl">
+          Latest News & Announcements
+        </h2>
+
+        <p class="mt-4 max-w-2xl leading-7 text-gray-600">
+          Keep up with school activities, academic updates, and important events.
+        </p>
+      </div>
+
+      <a href="#contact" class="font-semibold text-blue-800 hover:text-yellow-600">
+        Contact the School →
+      </a>
+    </div>
+
+    <div class="mt-12 grid gap-8 md:grid-cols-3">
+
+      <article class="overflow-hidden rounded-2xl border border-gray-200 bg-white transition hover:shadow-lg">
+        <img
+       src="/src/assets/school-campus.jpg"
+          alt="Students participating in a school activity"
+          class="h-52 w-full object-cover"
+        />
+
+        <div class="p-6">
+          <p class="text-sm text-gray-500">School Life · 10 October 2026</p>
+
+          <h3 class="mt-3 text-xl font-bold text-blue-950">
+            Welcome to a New School Term
+          </h3>
+
+          <p class="mt-3 leading-6 text-gray-600">
+            Learn about preparations, student activities, and plans for the new term.
+          </p>
+
+          <a href="#contact" class="mt-5 inline-block font-semibold text-blue-800 hover:text-yellow-600">
+            Read More →
+          </a>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-2xl border border-gray-200 bg-white transition hover:shadow-lg">
+        <img
+         src="/src/assets/examprep.jpg"
+          alt="Students taking an examination"
+          class="h-52 w-full object-cover"
+        />
+
+        <div class="p-6">
+          <p class="text-sm text-gray-500">Academics · 8 October 2026</p>
+
+          <h3 class="mt-3 text-xl font-bold text-blue-950">
+            Examination Preparation
+          </h3>
+
+          <p class="mt-3 leading-6 text-gray-600">
+            Encourage learners to prepare well and follow their revision schedules.
+          </p>
+
+          <a href="#contact" class="mt-5 inline-block font-semibold text-blue-800 hover:text-yellow-600">
+            Read More →
+          </a>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-2xl border border-gray-200 bg-white transition hover:shadow-lg">
+        <img
+          src="/src/assets/sportimage.jpg"
+          alt="Students participating in school sports"
+          class="h-52 w-full object-cover"
+        />
+
+        <div class="p-6">
+          <p class="text-sm text-gray-500">Events · 5 October 2026</p>
+
+          <h3 class="mt-3 text-xl font-bold text-blue-950">
+            Sports and Co-curricular Activities
+          </h3>
+
+          <p class="mt-3 leading-6 text-gray-600">
+            Discover how sports and teamwork help students build confidence and discipline.
+          </p>
+
+          <a href="#contact" class="mt-5 inline-block font-semibold text-blue-800 hover:text-yellow-600">
+            Read More →
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+<!--admission-->
+
+<section id="admissions" class="bg-blue-950 px-6 py-20">
+  <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 rounded-2xl bg-blue-900 p-8 text-center md:flex-row md:p-12 md:text-left">
+
+    <div class="max-w-2xl">
+      <p class="font-semibold uppercase tracking-widest text-yellow-400">
+        Join Our Community
+      </p>
+
+      <h2 class="mt-3 text-3xl font-bold text-white md:text-4xl">
+        Your Child's Bright Future Starts Here
+      </h2>
+
+      <p class="mt-4 leading-7 text-blue-100">
+        Take the first step toward quality education in a supportive
+        environment that encourages every learner to grow.
+      </p>
+    </div>
+
+    <div class="flex shrink-0 flex-wrap justify-center gap-4">
+      <a
+        href="#contact"
+        class="rounded-lg bg-yellow-400 px-6 py-3 font-bold text-blue-950 transition hover:bg-yellow-300"
+      >
+        Enquire Now
+      </a>
+
+      <a
+        href="#contact"
+        class="rounded-lg border border-white px-6 py-3 font-semibold text-white transition hover:bg-white hover:text-blue-950"
+      >
+        Contact Admissions
+      </a>
+    </div>
+
+  </div>
+</section>
+<!--contacts-->
+
+<section id="contact" class="bg-gray-50 px-6 py-20">
+    
+  <div class="mx-auto max-w-7xl">
+
+    <div class="mb-12 text-center">
+      <p class="font-semibold uppercase tracking-widest text-yellow-600">
+        Get In Touch
+      </p>
+
+      <h2 class="mt-3 text-3xl font-bold text-blue-950 md:text-4xl">
+        Contact BrightStar High School
+      </h2>
+
+      <p class="mx-auto mt-4 max-w-2xl leading-7 text-gray-600">
+        Have a question about admissions or school programs?
+        We'd be happy to hear from you.
+      </p>
+    </div>
+
+    <div class="grid gap-10 md:grid-cols-2">
+
+      <div class="rounded-2xl bg-blue-950 p-8 text-white">
+        <h3 class="text-2xl font-bold">School Information</h3>
+
+        <p class="mt-3 leading-7 text-blue-100">
+          Contact our school office for enquiries, admissions,
+          and other information.
+        </p>
+
+        <div class="mt-8 space-y-6">
+
+          <div>
+            <h4 class="font-semibold text-yellow-400">Address</h4>
+            <p class="mt-1 text-blue-100">Enter school address, Kenya</p>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-yellow-400">Phone</h4>
+            <a href="tel:+254700000000" class="mt-1 inline-block text-blue-100 hover:text-white">
+              +254 700 000 000
+            </a>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-yellow-400">Email</h4>
+            <a href="mailto:info@brightstar.example" class="mt-1 inline-block text-blue-100 hover:text-white">
+              info@brightstar.example
+            </a>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-yellow-400">Office Hours</h4>
+            <p class="mt-1 text-blue-100">Monday – Friday, 8:00 AM – 5:00 PM</p>
+          </div>
+
+        </div>
+      </div>
+
+      <form class="rounded-2xl bg-white p-8 shadow-sm">
+
+        <h3 class="text-2xl font-bold text-blue-950">
+          Send Us a Message
+        </h3>
+
+        <div class="mt-6">
+          <label for="name" class="mb-2 block font-medium text-gray-700">
+            Your Name
+          </label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Enter your full name"
+            required
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-blue-800 focus:ring-2 focus:ring-blue-100"
+          />
+        </div>
+
+        <div class="mt-5">
+          <label for="email" class="mb-2 block font-medium text-gray-700">
+            Email Address
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-blue-800 focus:ring-2 focus:ring-blue-100"
+          />
+        </div>
+
+        <div class="mt-5">
+          <label for="subject" class="mb-2 block font-medium text-gray-700">
+            Subject
+          </label>
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            placeholder="What is your enquiry about?"
+            required
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-blue-800 focus:ring-2 focus:ring-blue-100"
+          />
+        </div>
+
+        <div class="mt-5">
+          <label for="message" class="mb-2 block font-medium text-gray-700">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Write your message here..."
+            required
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-blue-800 focus:ring-2 focus:ring-blue-100"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="mt-6 w-full rounded-lg bg-blue-950 px-6 py-3 font-bold text-white transition hover:bg-blue-800"
+        >
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+<!--footer-->
+
+<footer class="bg-blue-950 px-6 pt-14 text-white">
+
+  <div class="mx-auto grid max-w-7xl gap-10 pb-10 md:grid-cols-3">
+
+    <div>
+      <a href="#home" class="text-2xl font-bold">
+        BrightStar <span class="text-yellow-400">High School</span>
+      </a>
+
+      <p class="mt-4 max-w-sm leading-7 text-blue-200">
+        Shaping bright futures through quality education,
+        strong values, and a supportive learning community.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-bold text-yellow-400">Quick Links</h3>
+
+      <ul class="mt-4 space-y-3">
+        <li><a href="#home" class="text-blue-200 hover:text-white">Home</a></li>
+        <li><a href="#about" class="text-blue-200 hover:text-white">About Us</a></li>
+        <li><a href="#academics" class="text-blue-200 hover:text-white">Academics</a></li>
+        <li><a href="#news" class="text-blue-200 hover:text-white">News & Announcements</a></li>
+        <li><a href="#admissions" class="text-blue-200 hover:text-white">Admissions</a></li>
+        <li><a href="#contact" class="text-blue-200 hover:text-white">Contact Us</a></li>
+        <li><a href="/src/pages/admindashboardlogin.html" class="text-sm text-blue-200 hover:text-white ">STAFF lOGIN</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-bold text-yellow-400">Contact Information</h3>
+
+      <div class="mt-4 space-y-3 text-blue-200">
+        <p>Location: nairobi, Kenya</p>
+        <p>
+          Phone:
+          <a href="tel:+254798248521" class="hover:text-white">
+            +254 798248521
+          </a>
+        </p>
+        <p>
+          Email:
+          <a href="mailto:info@brightstar.example" class="hover:text-white">
+            info@brightstar.example
+          </a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="border-t border-blue-800 py-5">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-center text-sm text-blue-300 md:flex-row">
+
+      <p>
+        © <span class="footer-year">*****</span> BrightStar High School. All rights reserved.
+      </p>
+
+      <a href="#home" class="hover:text-yellow-400">
+        Back to Top ↑
+      </a>
+
+    </div>
+  </div>
+  
+
+</footer>
+
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
