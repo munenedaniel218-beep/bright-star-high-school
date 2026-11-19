@@ -12,6 +12,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         adminLogin: resolve(__dirname, 'src/pages/admindashboardlogin.html'),
+        adminDashboard: resolve(__dirname, 'src/pages/admindashboard.html'),
       },
     },
   },

@@ -3,7 +3,7 @@ const credentials = {
   usernames: ['admin', 'admin@brightstar.example'],
   password: 'admin123',
 }
-const dashboardPage = '/src/pages/admindashboard.html'
+const dashboardPage = './admindashboard.html'
 const sessionKey = 'admin-logged-in'
 /* ---------------------------------- */
 
