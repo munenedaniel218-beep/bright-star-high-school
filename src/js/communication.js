@@ -1,5 +1,3 @@
-
-
 const pages = {
 dashboard: {
 title: 'Dashboard',
@@ -47,13 +45,12 @@ pageTitle.textContent = page.title
 document.querySelectorAll('[data-section]').forEach((link) => {
 const active = link.dataset.section === name
 
-```
+
 link.classList.toggle('bg-blue-900/80', active)
 link.classList.toggle('text-white', active)
 link.classList.toggle('hover:bg-slate-800/60', !active)
 
 link.querySelector('i')?.classList.toggle('text-amber-400', active)
-```
 
 })
 }
@@ -174,7 +171,7 @@ return `<div>
 
 })
 
-const button = `     <button type="submit" class="rounded-lg bg-amber-500 px-6 py-3 text-sm font-bold text-slate-900 transition hover:bg-amber-400">       Save changes     </button>   `
+const button = `<button type="submit" class="rounded-lg bg-amber-500 px-6 py-3 text-sm font-bold text-slate-900 transition hover:bg-amber-400"> Save changes</button>   `
 
 form.innerHTML = fields.join('') + button
 }
